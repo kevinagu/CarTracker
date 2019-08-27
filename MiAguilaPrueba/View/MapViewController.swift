@@ -19,6 +19,7 @@ class MapViewController: UIViewController {
     let initialPoint = CGPoint(x: 4.667426, y: -74.056624)
     let finalPoint = CGPoint(x: 4.672655, y: -74.054071)
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -53,5 +54,7 @@ extension MapViewController: CLLocationManagerDelegate{
 }
 
 extension MapViewController: GMSMapViewDelegate{
-    
+    func mapView(_ mapView: GMSMapView, didChange position: GMSCameraPosition) {
+     
+    }
 }
