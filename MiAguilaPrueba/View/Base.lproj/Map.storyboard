@@ -10,14 +10,18 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Map View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MiAguilaPrueba" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MapViewController" customModule="MiAguilaPrueba" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eIF-Bi-ael" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                             <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MQG-1r-RcP">
                                 <rect key="frame" x="0.0" y="567" width="375" height="100"/>
                                 <subviews>
@@ -44,11 +48,18 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="MQG-1r-RcP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="544-Hh-Zpa"/>
+                            <constraint firstItem="eIF-Bi-ael" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="AQA-TT-1JI"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MQG-1r-RcP" secondAttribute="trailing" id="MMd-xQ-JSt"/>
+                            <constraint firstItem="eIF-Bi-ael" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="bT3-mk-8C2"/>
                             <constraint firstItem="MQG-1r-RcP" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="ieT-xn-6Ei"/>
+                            <constraint firstItem="eIF-Bi-ael" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="poa-QX-OmH"/>
+                            <constraint firstItem="eIF-Bi-ael" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="uGi-iy-zfJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="eIF-Bi-ael" id="o83-wj-1st"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

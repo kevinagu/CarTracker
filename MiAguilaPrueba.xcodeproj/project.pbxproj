@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -93,7 +93,6 @@
 				FD293FD2EEC910AF0CC1ACCB /* Pods-MiAguilaPrueba.debug.xcconfig */,
 				750F56903C43BD6063A76899 /* Pods-MiAguilaPrueba.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};

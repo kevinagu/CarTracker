@@ -7,14 +7,30 @@
 //
 
 import UIKit
+import CoreLocation
+import GoogleMaps
 
-class ViewController: UIViewController {
-
+class MapViewController: UIViewController {
+    //IBOulets
+    @IBOutlet weak var mapView: GMSMapView!
+    
+    //Constants
+    let locationManager = CLLocationManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        locationManager.delegate = self
     }
 
 
 }
 
+extension MapViewController: CLLocationManagerDelegate{
+    func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
+    if let location = locations.first as? CLLocation {
+    mapView.camera = GMSCameraPosition(target: location.coordinate, zoom: 15, bearing: 0, viewingAngle: 0)
+    locationManager.stopUpdatingLocation()
+    }
+    }
+}
