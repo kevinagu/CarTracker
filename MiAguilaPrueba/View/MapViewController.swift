@@ -16,6 +16,8 @@ class MapViewController: UIViewController {
     
     //Constants
     let locationManager = CLLocationManager()
+    let initialPoint = CGPoint(x: 4.667426, y: -74.056624)
+    let finalPoint = CGPoint(x: 4.672655, y: -74.054071)
     
     override func viewDidLoad() {
         super.viewDidLoad()
