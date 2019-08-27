@@ -22,9 +22,24 @@ class MapViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        loadMapView()
         locationManager.delegate = self
     }
-
+    
+    func loadMapView(){
+        mapView.delegate = self
+        let camera = GMSCameraPosition.camera(withLatitude: CLLocationDegrees(exactly: initialPoint.x) ?? CLLocationDegrees.zero, longitude: CLLocationDegrees(exactly:  initialPoint.y) ?? CLLocationDegrees.zero, zoom: 15.0)
+        mapView.camera = camera
+        
+        let marker = GMSMarker()
+        marker.position = CLLocationCoordinate2D(latitude: CLLocationDegrees(exactly: initialPoint.x) ?? CLLocationDegrees.zero, longitude: CLLocationDegrees(exactly:  initialPoint.y) ?? CLLocationDegrees.zero)
+        marker.snippet = "Mi Aguila"
+        marker.map = mapView
+        
+        let destinationMarker = GMSMarker(position: CLLocationCoordinate2D(latitude: CLLocationDegrees(exactly: finalPoint.x) ?? CLLocationDegrees.zero, longitude: CLLocationDegrees(exactly: finalPoint.y) ?? CLLocationDegrees.zero))
+        
+        destinationMarker.map = mapView
+    }
 
 }
 
@@ -35,4 +50,8 @@ extension MapViewController: CLLocationManagerDelegate{
     locationManager.stopUpdatingLocation()
     }
     }
+}
+
+extension MapViewController: GMSMapViewDelegate{
+    
 }

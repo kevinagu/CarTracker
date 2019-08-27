@@ -10,5 +10,5 @@ import Foundation
 
 
 struct Constants {
-    static let googleMapKey = "AIzaSyAiHn-8ZDAYORWZPj64HEJwEWBxS7HKz_4"
+    static let googleMapKey = "AIzaSyAiHn-8ZdaYORWZPj64HEJwEWBxS7HKz_4"
 }
