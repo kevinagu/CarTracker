@@ -1,0 +1,6 @@
+framework module Pods_MiAguilaPrueba {
+  umbrella header "Pods-MiAguilaPrueba-umbrella.h"
+
+  export *
+  module * { export * }
+}

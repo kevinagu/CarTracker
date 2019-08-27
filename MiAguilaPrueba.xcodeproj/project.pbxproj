@@ -9,19 +9,23 @@
 /* Begin PBXBuildFile section */
 		7BF9E8A72314A6A400F441E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF9E8A62314A6A400F441E7 /* AppDelegate.swift */; };
 		7BF9E8A92314A6A400F441E7 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF9E8A82314A6A400F441E7 /* MapViewController.swift */; };
-		7BF9E8AC2314A6A400F441E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BF9E8AA2314A6A400F441E7 /* Main.storyboard */; };
+		7BF9E8AC2314A6A400F441E7 /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BF9E8AA2314A6A400F441E7 /* Map.storyboard */; };
 		7BF9E8AE2314A6A600F441E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BF9E8AD2314A6A600F441E7 /* Assets.xcassets */; };
 		7BF9E8B12314A6A600F441E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BF9E8AF2314A6A600F441E7 /* LaunchScreen.storyboard */; };
+		F7AEF14D9E2A798914E96281 /* Pods_MiAguilaPrueba.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 969082BE621F65701E6C9FA9 /* Pods_MiAguilaPrueba.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		750F56903C43BD6063A76899 /* Pods-MiAguilaPrueba.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiAguilaPrueba.release.xcconfig"; path = "Target Support Files/Pods-MiAguilaPrueba/Pods-MiAguilaPrueba.release.xcconfig"; sourceTree = "<group>"; };
 		7BF9E8A32314A6A400F441E7 /* MiAguilaPrueba.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiAguilaPrueba.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BF9E8A62314A6A400F441E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7BF9E8A82314A6A400F441E7 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		7BF9E8AB2314A6A400F441E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7BF9E8AB2314A6A400F441E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Map.storyboard; sourceTree = "<group>"; };
 		7BF9E8AD2314A6A600F441E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7BF9E8B02314A6A600F441E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7BF9E8B22314A6A600F441E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		969082BE621F65701E6C9FA9 /* Pods_MiAguilaPrueba.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MiAguilaPrueba.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD293FD2EEC910AF0CC1ACCB /* Pods-MiAguilaPrueba.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiAguilaPrueba.debug.xcconfig"; path = "Target Support Files/Pods-MiAguilaPrueba/Pods-MiAguilaPrueba.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7AEF14D9E2A798914E96281 /* Pods_MiAguilaPrueba.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		39BEDB025DA41F2B0EFAA35F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				969082BE621F65701E6C9FA9 /* Pods_MiAguilaPrueba.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7BF9E89A2314A6A400F441E7 = {
 			isa = PBXGroup;
 			children = (
 				7BF9E8A52314A6A400F441E7 /* MiAguilaPrueba */,
 				7BF9E8A42314A6A400F441E7 /* Products */,
+				FC8D0B431F9B59B4853D64D3 /* Pods */,
+				39BEDB025DA41F2B0EFAA35F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,7 +71,6 @@
 			children = (
 				7BF9E8B82314AA3200F441E7 /* View */,
 				7BF9E8A62314A6A400F441E7 /* AppDelegate.swift */,
-				7BF9E8AA2314A6A400F441E7 /* Main.storyboard */,
 				7BF9E8AD2314A6A600F441E7 /* Assets.xcassets */,
 				7BF9E8AF2314A6A600F441E7 /* LaunchScreen.storyboard */,
 				7BF9E8B22314A6A600F441E7 /* Info.plist */,
@@ -67,9 +81,20 @@
 		7BF9E8B82314AA3200F441E7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7BF9E8AA2314A6A400F441E7 /* Map.storyboard */,
 				7BF9E8A82314A6A400F441E7 /* MapViewController.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		FC8D0B431F9B59B4853D64D3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FD293FD2EEC910AF0CC1ACCB /* Pods-MiAguilaPrueba.debug.xcconfig */,
+				750F56903C43BD6063A76899 /* Pods-MiAguilaPrueba.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -79,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7BF9E8B52314A6A600F441E7 /* Build configuration list for PBXNativeTarget "MiAguilaPrueba" */;
 			buildPhases = (
+				F793DAA294CFAD3595307E1B /* [CP] Check Pods Manifest.lock */,
 				7BF9E89F2314A6A400F441E7 /* Sources */,
 				7BF9E8A02314A6A400F441E7 /* Frameworks */,
 				7BF9E8A12314A6A400F441E7 /* Resources */,
+				518AC52B38D917520986086E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,11 +159,53 @@
 			files = (
 				7BF9E8B12314A6A600F441E7 /* LaunchScreen.storyboard in Resources */,
 				7BF9E8AE2314A6A600F441E7 /* Assets.xcassets in Resources */,
-				7BF9E8AC2314A6A400F441E7 /* Main.storyboard in Resources */,
+				7BF9E8AC2314A6A400F441E7 /* Map.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		518AC52B38D917520986086E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MiAguilaPrueba/Pods-MiAguilaPrueba-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MiAguilaPrueba/Pods-MiAguilaPrueba-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MiAguilaPrueba/Pods-MiAguilaPrueba-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F793DAA294CFAD3595307E1B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MiAguilaPrueba-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7BF9E89F2314A6A400F441E7 /* Sources */ = {
@@ -151,12 +220,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		7BF9E8AA2314A6A400F441E7 /* Main.storyboard */ = {
+		7BF9E8AA2314A6A400F441E7 /* Map.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				7BF9E8AB2314A6A400F441E7 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Map.storyboard;
 			sourceTree = "<group>";
 		};
 		7BF9E8AF2314A6A600F441E7 /* LaunchScreen.storyboard */ = {
@@ -288,10 +357,12 @@
 		};
 		7BF9E8B62314A6A600F441E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD293FD2EEC910AF0CC1ACCB /* Pods-MiAguilaPrueba.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MiAguilaPrueba/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,10 +376,12 @@
 		};
 		7BF9E8B72314A6A600F441E7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 750F56903C43BD6063A76899 /* Pods-MiAguilaPrueba.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MiAguilaPrueba/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
